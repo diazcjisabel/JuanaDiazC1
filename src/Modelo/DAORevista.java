@@ -65,7 +65,7 @@ public class DAORevista {
 
     public int Eliminar(int numero) {
 
-        String trassaccion = "Delet From Revista Where='" + numero + "'";
+        String trassaccion = "Delete From Revista Where numero='" + numero + "'";
         return new DataBase().Actualizar(trassaccion);
 
     }
